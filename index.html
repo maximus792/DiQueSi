@@ -1,0 +1,51 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Si</title>
+    <style>
+        html{
+            width: 100%;
+            height: 100%;
+        }
+        body{
+            display: flex;
+            justify-content: center;
+            flex-direction: column;
+            align-items: center;
+            width: 100%;
+            height: 100%;
+        }
+        h1{
+            font-size: 3rem;
+        }
+
+        button{
+            margin-right: 1rem;
+            font-size: 1.5rem;
+        }
+        #no{
+            position: absolute;
+        }
+    </style>
+</head>
+<body>
+    <h1>Quieres ser mi novia?</h1>
+    <div>
+        <button id="si">SI</button>
+        <button id="no">NO</button>
+    </div>
+
+    <script>
+        document.querySelector('#no').addEventListener('mouseover', () => {
+            no.style.top = `${Math.floor(Math.random() * 100)}%`; 
+            no.style.left = `${Math.floor(Math.random() * 100)}%`; 
+        })
+        document.querySelector('#si').addEventListener('click', () => {
+            alert('Sabia que dirias que si :)')
+        })
+    </script>
+</body>
+</html>
